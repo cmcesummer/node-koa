@@ -21,17 +21,17 @@
 ##模块写法
 ####
 ### Common.js (sever)
-#### module.exports = 'abc'  //content.js
-#### var str = require('./content.js')  //index.js
+##### module.exports = 'abc'  //content.js
+##### var str = require('./content.js')  //index.js
 ####
 ### require.js (browser)
-#### define('content.js', function(){    //content.js
-####   return 'abc';
-#### })
-####require(['./content.js'], function(str){  //index.js
-####    console.log(str);   
-####})
+##### define('content.js', function(){    //content.js
+#####   return 'abc';
+##### })
+#####require(['./content.js'], function(str){  //index.js
+#####    console.log(str);   
+#####})
 ####
 ### es6
-#### export default 'abc'  //content.js
-#### import str from './content.js'  //index.js
+##### export default 'abc'  //content.js
+##### import str from './content.js'  //index.js
