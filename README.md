@@ -17,3 +17,21 @@
 
 ##模板引擎
 #####"nunjucks": "2.4.2"
+
+##模块写法
+####
+### Common.js (sever)
+#### module.exports = 'abc'  //content.js
+#### var str = require('./content.js')  //index.js
+####
+### require.js (browser)
+#### define('content.js', function(){    //content.js
+####   return 'abc';
+#### })
+####require(['./content.js'], function(str){  //index.js
+####    console.log(str);   
+####})
+####
+### es6
+#### export default 'abc'  //content.js
+#### import str from './content.js'  //index.js
