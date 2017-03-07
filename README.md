@@ -20,33 +20,33 @@
 
 ##模块写法
 
-Common.js (sever) (webpack)
-module.exports = 'abc'  //content.js
-var str = require('./content.js')  //index.js
+Common.js (sever) (webpack)    
+module.exports = 'abc'  //content.js    
+var str = require('./content.js')  //index.js    
 
-require.js (browser)(AMD)
-define('content.js', function(){    //content.js
-	return 'abc';
-})
-require(['./content.js'], function(str){  //index.js
-	console.log(str);   
-})
+require.js (browser)(AMD)    
+define('content.js', function(){    //content.js    
+	return 'abc';    
+})    
+require(['./content.js'], function(str){  //index.js    
+	console.log(str);      
+})    
 
-sea.js (CMD)
-html:
-sea.config({
-	base: "../sea-modules/",
-	alias: {
-      "jquery": "1.10.1/jquery.js"
-    }
-});
-seajs.use("examples/hello/1.0.0/main");
-js:
-define(function(require, exports, module) {
-	var $ = require('jQuery')
-	module.exports = fuc
-})
+sea.js (CMD)   
+html:    
+sea.config({    
+	base: "../sea-modules/",    
+	alias: {    
+      "jquery": "1.10.1/jquery.js"    
+    }    
+});    
+seajs.use("examples/hello/1.0.0/main");    
+js:    
+define(function(require, exports, module) {    
+	var $ = require('jQuery')    
+	module.exports = fuc    
+})    
 
- es6
- export default 'abc'  //content.js
- import str from './content.js'  //index.js
+ es6    
+ export default 'abc'  //content.js    
+ import str from './content.js'  //index.js    
